@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>טופס מיפוי אתגרים וצרכים עסקיים</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input[type="text"], textarea, select { width: 100%; padding: 8px; margin-top: 5px; }
+        .section { margin-bottom: 25px; border: 1px solid #ccc; padding: 15px; border-radius: 5px; }
+        .section-title { font-size: 1.2em; margin-bottom: 10px; }
+        .submit-btn { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>טופס מיפוי אתגרים וצרכים עסקיים</h1>
+    <form action="https://formsubmit.co/mr.aminkhalifa@gmail.com" method="POST">
+        <div class="section">
+            <div class="section-title">חלק א – מידע כללי</div>
+            <label>שם החברה:
+                <input type="text" name="company_name">
+            </label>
+            <label>שם הממלא:
+                <input type="text" name="respondent_name">
+            </label>
+            <label>תאריך:
+                <input type="date" name="date">
+            </label>
+            <label>מספר העובדים בחברה:
+                <input type="text" name="employee_count">
+            </label>
+            <label>חלוקה בין שטח/משרד:
+                <input type="text" name="division_field_office">
+            </label>
+            <label>מלאי ממוצע (מספר פריטים ושווי כספי):
+                <input type="text" name="average_inventory">
+            </label>
+            <label>מספר חנויות לקוחות פעילים בחודש:
+                <input type="text" name="active_clients">
+            </label>
+        </div>
+
+        <div class="section">
+            <div class="section-title">חלק ב – ניהול פיננסי ותזרים מזומנים</div>
+            <label>האם קיימת מערכת לניהול תזרים?
+                <select name="cashflow_system">
+                    <option value="">--בחר--</option>
+                    <option value="yes">כן</option>
+                    <option value="no">לא</option>
+                </select>
+            </label>
+            <label>אם כן, איזו:
+                <input type="text" name="system_name">
+            </label>
+            <label>כיצד מתבצע המעקב על תשלומים נכנסים ויוצאים?
+                <select name="payment_tracking">
+                    <option value="">--בחר--</option>
+                    <option value="manual">ידני (קבצי אקסל)</option>
+                    <option value="software">תוכנה ייעודית</option>
+                    <option value="other">אחר</option>
+                </select>
+            </label>
+            <label>אם אחר, פרט:
+                <input type="text" name="payment_tracking_other">
+            </label>
+            <label>מהם סוגי התשלומים בהם יש עיכובים תדירים?
+                <textarea name="delayed_payments" rows="3"></textarea>
+            </label>
+            <label>האם קיימת תחזית תזרימית?
+                <select name="has_forecast">
+                    <option value="">--בחר--</option>
+                    <option value="monthly">כן – חודשית</option>
+                    <option value="quarterly">כן – רבעונית</option>
+                    <option value="no">לא</option>
+                </select>
+            </label>
+            <label>אתגרים מרכזיים בהתנהלות הכספית (עד 3):
+                <textarea name="financial_challenges" rows="3"></textarea>
+            </label>
+        </div>
+
+        <div class="section">
+            <div class="section-title">חלק ג – תפעול ולוגיסטיקה</div>
+            <label>כיצד מנוהל המלאי?
+                <select name="inventory_management">
+                    <option value="">--בחר--</option>
+                    <option value="manual">ידני</option>
+                    <option value="software">תוכנה</option>
+                    <option value="other">אחר</option>
+                </select>
+            </label>
+            <label>אם אחר, פרט:
+                <input type="text" name="inventory_other">
+            </label>
+            <label>זמן ממוצע לאספקת הזמנה (ימים):
+                <input type="text" name="average_delivery_time">
+            </label>
+            <label>טעויות/עיכובים במשלוחים:
+                <select name="delivery_issues">
+                    <option value="">--בחר--</option>
+                    <option value="rarely">לעיתים נדירות</option>
+                    <option value="often">לעיתים קרובות</option>
+                </select>
+            </label>
+            <label>פרט:
+                <textarea name="delivery_issues_details" rows="2"></textarea>
+            </label>
+            <label>קשיים שמדווחים מהשטח:
+                <textarea name="field_challenges" rows="3"></textarea>
+            </label>
+        </div>
+
+        <div class="section">
+            <div class="section-title">חלק ד – שיווק ומכירות</div>
+            <label>מקורות עיקריים ללידים:
+                <select name="lead_sources">
+                    <option value="">--בחר--</option>
+                    <option value="repeat">לקוחות חוזרים</option>
+                    <option value="referral">המלצות</option>
+                    <option value="digital">דיגיטל</option>
+                    <option value="field">אנשי שטח</option>
+                </select>
+            </label>
+            <label>האם יש CRM פעיל?
+                <select name="crm_active">
+                    <option value="">--בחר--</option>
+                    <option value="yes">כן</option>
+                    <option value="no">לא</option>
+                </select>
+            </label>
+            <label>כיצד מתבצע מעקב אחר הצעות מחיר/עסקאות פתוחות:
+                <textarea name="sales_tracking" rows="2"></textarea>
+            </label>
+            <label>אתגרים שמדווחים אנשי מכירות:
+                <textarea name="sales_challenges" rows="2"></textarea>
+            </label>
+            <label>פעולות שיווק נוכחיות (אם יש):
+                <textarea name="marketing_actions" rows="2"></textarea>
+            </label>
+            <label>אתגר עיקרי בגיוס לקוחות חדשים:
+                <textarea name="new_client_challenge" rows="2"></textarea>
+            </label>
+        </div>
+
+        <div class="section">
+            <div class="section-title">חלק ה – תקשורת פנימית וניהול עובדים</div>
+            <label>האם יש שיטת דיווח יומי לעובדים?
+                <select name="daily_reporting">
+                    <option value="">--בחר--</option>
+                    <option value="yes">כן</option>
+                    <option value="no">לא</option>
+                </select>
+            </label>
+            <label>כיצד מתבצע תיאום בין שטח למשרד:
+                <textarea name="coordination" rows="2"></textarea>
+            </label>
+            <label>האם קיימת חפיפה/בלבול בין משימות?
+                <select name="task_overlap">
+                    <option value="">--בחר--</option>
+                    <option value="yes">כן</option>
+                    <option value="no">לא</option>
+                </select>
+            </label>
+            <label>פרט:
+                <textarea name="overlap_details" rows="2"></textarea>
+            </label>
+            <label>קונפליקטים או בעיות בתקשורת:
+                <textarea name="communication_conflicts" rows="3"></textarea>
+            </label>
+            <label>בעיות תפעוליות חוזרות:
+                <textarea name="recurring_issues" rows="3"></textarea>
+            </label>
+            <label>שלושת התחומים הכי חלשים/דורשי שיפור:
+                <textarea name="weak_areas" rows="3"></textarea>
+            </label>
+        </div>
+
+        <div class="section">
+            <div class="section-title">חלק ו – אסטרטגיה כללית</div>
+            <label>אילו תהליכים הם בזבזניים במיוחד (זמן/כסף):
+                <textarea name="wasteful_processes" rows="3"></textarea>
+            </label>
+            <label>אילו תחומים מרגישים "לא בשליטה":
+                <textarea name="out_of_control_areas" rows="3"></textarea>
+            </label>
+            <label>אילו בעיות היית רוצה לפתור בעזרת מערכת חכמה:
+                <textarea name="system_challenges" rows="3"></textarea>
+            </label>
+            <label>עד כמה אתה מקבל החלטות לפי נתונים?
+                <select name="data_driven_decisions">
+                    <option value="">--בחר--</option>
+                    <option value="1">1 – כלל לא</option>
+                    <option value="2">2</option>
+                    <option value="3">3 – בינוני</option>
+                    <option value="4">4</option>
+                    <option value="5">5 – בהחלט</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="section">
+            <div class="section-title">הערות נוספות</div>
+            <textarea name="additional_notes" rows="4" placeholder="הוסף כאן הערות נוספות..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">שלח</button>
+    <input type="hidden" name="_captcha" value="false">
+</form>
+</body>
+</html>
